@@ -1,5 +1,5 @@
 {
-  "name": "Marie",
+  "name": "ParkourXbot",
   "description": "ParkourXbot Simply Stable,Secure. #mariefork",
   "keywords": [
     "telegram",
@@ -73,7 +73,7 @@
     },
     "BAN_STICKER": {
       "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
-      "value": "CAACAgUAAxkBAAEEHUledONuqKpmXca26DkrcwN-1r895gACgwADduBWE1P_yRh_ZtAFGAQ",
+      "value": "CAADBQADgwADduBWE1P_yRh_ZtAFAg",
       "required": false
     }
   },
