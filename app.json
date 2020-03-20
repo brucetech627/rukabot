@@ -1,7 +1,7 @@
 {
   "name": "ParkourXbot",
   "description": "ParkourXbot Simply Stable,Secure. #mariefork,
-  "logo" : "https://raw.githubusercontent.com/denomparkour/parkourXbot/master/logo/app_logo.png",
+  "logo": "https://raw.githubusercontent.com/denomparkour/parkourXbot/master/logo/app_logo.png",
       "ENV": {
       "description": "Setting this to ANYTHING will enable environment variables.",
       "value": "ANYTHING"
