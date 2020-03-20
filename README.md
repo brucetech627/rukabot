@@ -186,4 +186,6 @@ through the `/stats` command, which is only available to the bot owner.
 
 
 `Deploy to Heroku`
+
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
