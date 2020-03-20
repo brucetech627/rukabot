@@ -26,10 +26,6 @@
       "description": "Your username",
       "value": "thedenomparkour"
     },
-    "WEBHOOK": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
-      "value": "ANYTHING"
-    },
     "URL": {
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
       "value": ""
@@ -54,10 +50,6 @@
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
       "value": "https://www.paypal.me/PaulSonOfLars"
-    },
-    "PORT": {
-      "description": "Port to use for your webhooks",
-      "value": "8443"
     },
     "DEL_CMDS": {
       "description": "Whether to delete commands from users which don't have rights to use that command",
