@@ -28,7 +28,7 @@ This bot is maintained by the [nub guy](t.me/thedenomparkour)
 You can find the list of available commands with /help.
 
 Made with love for [Atom Community ❤️](t.me/atomosofficial)
-
+"""
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
