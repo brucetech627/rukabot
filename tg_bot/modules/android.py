@@ -21,8 +21,6 @@ from requests import get
 # This module was inspired by Android Helper Bot by Vachounet.
 # None of the code is taken from the bot itself, to avoid confusion.
 
-LOGGER.info("android: Original Android Modules by @RealAkito on Telegram")
-
 
 @run_async
 def havoc(bot: Bot, update: Update):
