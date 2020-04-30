@@ -158,6 +158,78 @@ def los(bot: Bot, update: Update):
     message.reply_text(reply_text,
                        parse_mode=ParseMode.MARKDOWN,
                        disable_web_page_preview=True)
+  
+@run_async
+def atom(bot: Bot, update: Update):
+    cmd_name = "atom"
+    message = update.effective_message
+    chat = update.effective_chat  # type: Optional[Chat]
+    device = message.text[len(f'/{cmd_name} '):]
+
+    if device == "example":
+        reply_text = tld(chat.id, "err_example_device")
+        message.reply_text(reply_text,
+                           parse_mode=ParseMode.MARKDOWN,
+                           disable_web_page_preview=True)
+        return
+
+    if device == "x00t":
+        device = "X00T"
+
+    if device == "x01bd":
+        device = "X01BD"
+
+    fetch = get(
+        f'https://raw.githubusercontent.com/AtomOrganization/official_devices/master/builds/{device}.json'
+    )
+
+    if device == '':
+        reply_text = tld(chat.id, "cmd_example").format(cmd_name)
+        message.reply_text(reply_text,
+                           parse_mode=ParseMode.MARKDOWN,
+                           disable_web_page_preview=True)
+        return
+
+    if fetch.status_code == 200:
+        try:
+            usr = fetch.json()
+            filename = usr['filename']
+            url = usr['url']
+            version = usr['version']
+            maintainer = usr['maintainer']
+            maintainer_url = usr['telegram_username']
+            size_a = usr['size']
+            size_b = sizee(int(size_a))
+
+            reply_text = tld(chat.id, "download").format(filename, url)
+            reply_text += tld(chat.id, "build_size").format(size_b)
+            reply_text += tld(chat.id, "android_version").format(version)
+            reply_text += tld(chat.id, "maintainer").format(
+                f"[{maintainer}](https://t.me/{maintainer_url})")
+
+            keyboard = [[
+                InlineKeyboardButton(text=tld(chat.id, "btn_dl"), url=f"{url}")
+            ]]
+            message.reply_text(reply_text,
+                               reply_markup=InlineKeyboardMarkup(keyboard),
+                               parse_mode=ParseMode.MARKDOWN,
+                               disable_web_page_preview=True)
+            return
+
+        except ValueError:
+            reply_text = tld(chat.id, "err_json")
+            message.reply_text(reply_text,
+                               parse_mode=ParseMode.MARKDOWN,
+                               disable_web_page_preview=True)
+            return
+
+    elif fetch.status_code == 404:
+        reply_text = tld(chat.id, "err_not_found")
+        message.reply_text(reply_text,
+                           parse_mode=ParseMode.MARKDOWN,
+                           disable_web_page_preview=True)
+        return
+
 
 
 @run_async
