@@ -25,7 +25,5 @@ spamwatch
 deeppyer
 csvfaker
 jikanpy
-bs4
-textwrap
-html
-datetime
+beautifulsoup4
+coffeehouse
