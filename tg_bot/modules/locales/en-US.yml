@@ -322,6 +322,24 @@ disable_help: |
   - /enable <cmd name>: Enable a command
   - /disable <cmd name>: Disable a command
   - /listcmds: List all toggleable commands
+#Backups
+modname_backups: Backups
+backups_help: |
+     Really? Idk what it does too
+     check source for more
+#Muting
+modname_muting: Muting
+muting_help: |
+     /mute to mute the user lol
+#rss
+modname_rss: Rss Feeds
+rss_help: |
+    Rss feeds lol
+#sed
+modname_sed: sed
+sed_help: |
+    Learn regex to use this boiiiii
+
 #Feds
 modname_feds: Federations
 feds_create_fail: Federation creation failed! Ask in @HarukaAyaGroup for help.
