@@ -653,6 +653,13 @@ memes_help: |
   - /runs: reply a random string from an array of replies.
   - /insults: reply a random string from an array of replies.
   - /slap: slap a user, or get slapped if not a reply.
+#Global bans
+modname_global_bans: Gban
+global_bans_help: |
+     Type /gban to Gangban that user.
+     Need sudo or creator to do that!
+     Bans the user wherever the bot finds it
+
 #Misc
 modname_misc: Misc
 misc_get_id_1: The original sender, {}, has an ID of `{}`.\nThe forwarder, {}, has an ID of `{}`.
@@ -724,6 +731,7 @@ msg_deleting_help: |
    - /del: deletes the message you replied to
    - /purge: deletes all messages between this and the replied to message.
    - /purge <integer X>: deletes the replied message, and X messages following it.
+
 #Muting
 mute_invalid: "You'll need to either give me a username to mute, or reply to someone to be muted."
 mute_not_myself: "I'm not muting myself!"
