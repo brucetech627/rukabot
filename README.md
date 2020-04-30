@@ -1,3 +1,5 @@
+#change to test branch for more kensur features
+
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
