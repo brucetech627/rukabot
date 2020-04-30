@@ -1074,6 +1074,10 @@ stickers_help: |
   - /stickerid: reply to a sticker to me to tell you its file ID.
   - /getsticker: reply to a sticker to me to upload its raw PNG file.
   - /kang: reply to a sticker to add it to your pack.
+#wallpapers
+modname_wallpaper: Wallpapers
+walpaper_help: |
+     Grab some cool wallpapers
 #Warnings
 modname_warns: Warnings
 warns_warn_admin_no_warn: I'm not going to warn an admin!
