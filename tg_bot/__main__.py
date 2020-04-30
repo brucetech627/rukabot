@@ -21,12 +21,16 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}! If you have any questions on how to use me, read /help.
 
-I'm a group manager bot For AtomOS community and my lead dev is [Naveen Achari](t.me/thephotogenicbug)	you can find what makes me tick [here](github.com/denomparkour/parkourxbot)!
+I'm a group manager bot built in python3, using the python-telegram-bot library, and am fully opensource; \
+you can find what makes me tick [here](github.com/denomparkour/parkourxbot)!
+
 Feel free to submit pull requests on github
-This bot is maintained by the [nub guy](t.me/thedenomparkour)	This bot is maintained by the [nub guy](t.me/thedenomparkour)
-You can find the list of available commands with /help.	You can find the list of available commands with /help.
+
+This bot is maintained by the [nub guy](t.me/thedenomparkour)
+
+You can find the list of available commands with /help.
+
 If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
-Made with love for [Atom Community ❤️](t.me/atomosofficial)
 """
 
 HELP_STRINGS = """
