@@ -27,10 +27,10 @@ DATA_EXPORT = []
 
 GDPR = []
 
-importlib.import_module("haruka.modules.tr_engine.language")
+importlib.import_module("tg_bot.modules.tr_engine.language")
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("haruka.modules." + module_name)
+    imported_module = importlib.import_module("tg_bot.modules." + module_name)
     modname = imported_module.__name__.split('.')[2]
 
     if not modname.lower() in IMPORTED:
