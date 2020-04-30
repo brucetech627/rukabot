@@ -12,7 +12,6 @@ from telegram.utils.helpers import escape_markdown, mention_html
 from telegram.error import BadRequest
 
 from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS
-from tg_bot.__main__ import GDPR
 from tg_bot.__main__ import STATS, USER_INFO
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.extraction import extract_user
@@ -144,18 +143,6 @@ def reply_keyboard_remove(bot: Bot, update: Update):
         reply_to_message_id=update.message.message_id)
     bot.delete_message(chat_id=update.message.chat_id,
                        message_id=old_message.message_id)
-
-
-@run_async
-def gdpr(bot: Bot, update: Update):
-    update.effective_message.reply_text(
-        tld(update.effective_chat.id, "misc_gdpr"))
-    for mod in GDPR:
-        mod.__gdpr__(update.effective_user.id)
-
-    update.effective_message.reply_text(tld(update.effective_chat.id,
-                                            "send_gdpr"),
-                                        parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
