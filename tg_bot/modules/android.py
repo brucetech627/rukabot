@@ -7,9 +7,9 @@ from telegram import Chat, Update, Bot
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import run_async
 
-from haruka import dispatcher, LOGGER
-from haruka.modules.disable import DisableAbleCommandHandler
-from haruka.modules.tr_engine.strings import tld
+from tg_bot import dispatcher, LOGGER
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot.modules.tr_engine.strings import tld
 
 from requests import get
 
