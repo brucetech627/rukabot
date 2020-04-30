@@ -58,6 +58,7 @@ if ENV:
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     DEEPFRY_TOKEN = os.environ.get("",True)
+    WALL_API = os.environ.get("")
 
 else:
     from tg_bot.config import Development as Config
@@ -102,7 +103,6 @@ else:
 
 
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(254318997)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
