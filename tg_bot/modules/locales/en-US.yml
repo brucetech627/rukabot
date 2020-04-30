@@ -104,9 +104,9 @@ err_api: Couldn't reach the API.
 err_example_device: Why are you trying to get the example device?
 err_json: Tell the rom maintainer to fix their OTA json. I'm sure this won't work with OTA and it won't work with this bot too :P
 btn_dl: Click here to Download
-cmd_example: Please type your device **codename**!\nFor example, `/{} tissot`
+cmd_example: Please type your device **codename**!\nFor example, `/{} whyred`
 evox_gsi: Please check Evolution X Updates channel(@EvolutionXUpdates) or click the button down below to download the GSIs!
-aex_cust_str: Please type your device **codename** and **Android Version**!\nFor example, `/aex tissot pie`
+aex_cust_str: Please type your device **codename** and **Android Version**!\nFor example, `/aex whyred pie`
 android_help: |
   *Device Specific ROM for a device*
   - /havoc <device>: Get the latest Havoc ROM for a device
