@@ -59,7 +59,7 @@ if ENV:
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     DEEPFRY_TOKEN = os.environ.get("",True)
     WALL_API = os.environ.get("")
-
+    SUPPORT_CHAT = os.environ.get("")
 else:
     from tg_bot.config import Development as Config
     TOKEN = Config.API_KEY
