@@ -24,3 +24,8 @@ markdown2
 spamwatch
 deeppyer
 csvfaker
+jikanpy
+bs4
+textwrap
+html
+datetime
