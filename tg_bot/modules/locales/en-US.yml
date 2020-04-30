@@ -73,7 +73,7 @@ admin_help: |
   - /demote: Demotes a user. Reply to the user or use their username.
 #Anime
 modname_anime: Anime
-afk_help: |
+anime_help: |
       Gtfo weebs!
 #AFK
 modname_afk: AFK
