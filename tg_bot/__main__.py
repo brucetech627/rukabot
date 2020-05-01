@@ -12,10 +12,10 @@ from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 
 # Needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from haruka.modules import ALL_MODULES
-from haruka import dispatcher, updater, LOGGER, ALLOW_EXCL
-from haruka.modules.helper_funcs.misc import paginate_modules
-from haruka.modules.tr_engine.strings import tld
+from tg_bot.modules import ALL_MODULES
+from tg_bot import dispatcher, updater, LOGGER, ALLOW_EXCL
+from tg_bot.modules.helper_funcs.misc import paginate_modules
+from tg_bot.modules.tr_engine.strings import tld
 
 IMPORTED = {}
 MIGRATEABLE = []
