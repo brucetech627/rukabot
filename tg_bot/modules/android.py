@@ -301,7 +301,7 @@ def atom(bot: Bot, update: Update):
             maintainer = usr['maintainer']
             maintainer_url = usr['telegram_username']
             size_a = usr['size']
-            size_b = sizee(int(size_a))
+            size_b = sizee(float(size_a))
 
             reply_text = tld(chat.id, "download").format(filename, url)
             reply_text += tld(chat.id, "build_size").format(size_b)
