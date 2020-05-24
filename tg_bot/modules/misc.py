@@ -114,7 +114,7 @@ def info(bot: Bot, update: Update, args: List[str]):
                 text += tld(chat.id, "misc_info_is_whitelisted")
 
     for mod in USER_INFO:
-        mod_info = mod.__user_info__(user.id, chat_10).strip()
+        mod_info = mod.__user_info__(user.id, chat_id).strip()
         if mod_info:
             text += "\n\n" + mod_info
 
