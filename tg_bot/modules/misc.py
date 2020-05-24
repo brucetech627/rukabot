@@ -11,7 +11,7 @@ from telegram.utils.helpers import mention_html
 from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS
 from tg_bot.__main__ import STATS, USER_INFO
 from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import user_admin, sudo_plus
+from tg_bot.modules.helper_funcs.chat_status import user_admin
 from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
