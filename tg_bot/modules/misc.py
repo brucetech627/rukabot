@@ -66,7 +66,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     chat = update.effective_chat  # type: Optional[Chat]
 
     if user_id:
-        user = bot.get_chat(user_id)
+        user = bot.get_chat(user_id, chat_id)
 
     elif not msg.reply_to_message and not args:
         user = msg.from_user
