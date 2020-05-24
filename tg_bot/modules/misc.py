@@ -189,13 +189,6 @@ def markdown_help(bot: Bot, update: Update):
                                         "[button2](buttonurl://google.com:same)")
 
 
-@run_async
-@sudo_plus
-def stats(bot: Bot, update: Update):
-    stats = "Current stats:\n" + "\n".join([mod.__stats__() for mod in STATS])
-    result = re.sub(r'(\d+)', r'<code>\1</code>', stats)
-    update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
-
 
 __help__ = """
  - /id: get the current group id. If used by replying to a message, gets that user's id.
