@@ -1,7 +1,7 @@
 {
-  "name": "ParkourXbot",
+  "name": "Rukabot",
   "logo": "https://da.gd/N6dJoN",
-  "description": "ParkourXbot Simply Stable,Secure. #mariefork",
+  "description": "RukaBot Simply Stable,Secure. #mariefork",
   "keywords": [
     "telegram",
     "best",
@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/denomparkour/parkourXbot",
+  "repository": "https://github.com/sparxfusion/rukabot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
@@ -21,11 +21,11 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "879820429"
+      "value": "901800749"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "thedenomparkour"
+      "value": "sparxfusion"
     },
     "URL": {
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
@@ -38,19 +38,15 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "879820429"
+      "value": "901800749"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "879820429"
+      "value": "901800749"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "879820429"
-    },
-    "DONATION_LINK": {
-      "description": "Optional: link where you would like to receive donations.",
-      "value": "https://www.paypal.me/PaulSonOfLars"
+      "value": "901800749"
     },
     "DEL_CMDS": {
       "description": "Whether to delete commands from users which don't have rights to use that command",
@@ -66,7 +62,7 @@
     },
     "BAN_STICKER": {
       "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
-      "value": "CAADBQADgwADduBWE1P_yRh_ZtAFAg",
+      "value": "AAMCBQADGQEAAQpvhGDMwjAYHby2CTEHsTGSoLAV4L25AAIvAgAC5XNBV-7nP4S6k4DdAh3Ic3QAAwEAB20AAwRMAAIfBA",
       "required": false
     }
   },
@@ -74,7 +70,7 @@
     {
       "plan": "heroku-postgresql",
       "options": {
-        "version": "9.5"
+        "version": "9.6"
       }
     }
   ]
